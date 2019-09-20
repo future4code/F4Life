@@ -10,8 +10,8 @@
 }
 
 #imagem-entrada{
-    height: 100vh;
-    background: rgb(121.6, 214.7, 212.1)
+    background: rgb(121.6, 214.7, 212.1);
+    flex-grow: 1;
 }
 
 header{
