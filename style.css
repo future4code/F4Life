@@ -56,13 +56,46 @@ h2 {
 }
 
 header{
-    width:100vw;
-    padding: 50px;
     background-color: rgb(19, 34, 53);
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    justify-content: center;
 }
 
 footer{
     width: 100vw;
     height: 50px;
     background: ;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;   
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    padding: 10px;
+    color: white; 
+}
+
+.nav-links a:link, .nav-links a:visited, .nav-links a:visited  {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #6DDAD3;
 }
