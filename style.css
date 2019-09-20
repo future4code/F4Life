@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#conteudo-total{
+    display: flex;
+    flex-direction: column;
+}
+
+#imagem-entrada{
+    height: 100vh;
+    background: rgb(121.6, 214.7, 212.1)
+}
+
+header{
+    width:100vw;
+    padding: 50px;
+    background-color: rgb(19, 34, 53);
+}
+
+
+
+footer{
+    width: 100vw;
+    height: 50px;
+    background: ;
+}
