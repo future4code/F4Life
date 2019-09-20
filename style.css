@@ -53,6 +53,44 @@ h2 {
     color: white;
 }
 
+.cases-em-geral {
+    background: rgb(19, 34, 53);;
+    height: 800px;
+    
+}
+
+.cases-sucessos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    text-align: center;
+    grid-row-gap: 60px;
+}
+
+#tituloCases {
+    text-transform: uppercase;
+    font-family: "montserrat";    
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+.cases {
+    height: 250px;
+    width: 250px;
+    border: 1px solid black;
+}
+
+.card-image p {
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-top: 10px;
+}
 header{
     background-color: rgb(19, 34, 53);
     display: flex;
@@ -178,6 +216,33 @@ nav {
     align-items: center;
 }
 
+.img-container {
+    overflow: hidden;
+}
+.wrap-locais {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 33% 33% 33%;
+    padding: 20px;
+    gap: 20px;
+}
+.locais-descricao {
+    padding: 2%;
+    
+}
+
+.locais-descricao p {
+    padding-bottom: 2%;
+    font-weight: bold;
+}
+.conheca-produtos {
+    padding: 1%;
+}
+
+#produtos {
+    width: 90%;
+}
+
 ::-webkit-input-placeholder {
     color: white;
  }
@@ -268,4 +333,25 @@ footer{
 .icone-rede{
     margin: 5% 10px;
 }
+}
+.wrap-produtos {
+    display: flex;
+    justify-content: center;
+    background-color: #F3F7FA;
+}
+.locais-preco p {
+    color: rgb(19, 34, 53);
+}
+
+.locais-endereco p {
+    color: #6DDAD3;
+}
+
+.container-locais {
+    background-color: white;
+    border: 1px solid rgb(243, 243, 243);
+}
+
+.container-locais:hover {
+    box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.3);
 }
