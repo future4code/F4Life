@@ -20,10 +20,9 @@
 
 #imagem-entrada{
     height: 100vh;
-    background-image: url(/img/background-img-universitários.jpg);
+    background-image: url(/assets/background-img-universitários.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-    width:100vw;
     text-align: center;
 }
 .imgLogo {
