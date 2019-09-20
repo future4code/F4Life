@@ -19,7 +19,6 @@
 }
 
 #imagem-entrada{
-    height: 100vh;
     background-image: url(assets/background-img-universitários.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -55,11 +54,10 @@
 
 .cases-em-geral {
     background: white;
-    height: 800px;
-    
 }
 
 .cases-sucessos {
+    margin-bottom: 5%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -143,6 +141,7 @@ nav {
     display: flex;
     justify-content: space-between;
     width: 80%;   
+    flex-wrap: wrap;
 }
 
 .nav-links {
@@ -170,7 +169,7 @@ nav {
 }
 
 .nav-logo img{
-    width: 100%;
+    
 }
 
 #contato-quemSomos{
@@ -241,7 +240,7 @@ nav {
 }
 
 .conheca-produtos h1{
-    width: 150%;
+    color: rgb(19, 34, 53);
 }
 
 #produtos {
@@ -313,39 +312,6 @@ form> h2{
     font-size: 50px;
 }
 
-@media (max-width:500px){
-     .contato{
-        margin: 15% 0;
-        min-width: 300px;
-     }
-
-     .quem-somos{
-        min-width: 300px;
-        margin-top: 10%;
-     }
-
-    #up{
-        opacity: 0.5;
-        font-size: 30px;
-        bottom: 15%;
-    }
-
-    #imgLogo {
-        width: 100%;
-    }
-
-    footer{
-        flex-direction: column;
-    }
-
-    .icone-rede{
-        margin: 5% 10px;
-    }
-
-    .wrap-locais{
-        grid-template-columns: 100%;
-    }
-}
 .wrap-produtos {
     display: flex;
     justify-content: center;
@@ -366,4 +332,69 @@ form> h2{
 
 .container-locais:hover {
     box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width:1000px){
+    #imagem-entrada{
+        height: 100vh;
+    }
+}
+
+@media (max-width:500px){
+    .contato{
+       margin: 15% 0;
+       min-width: 300px;
+    }
+
+    .quem-somos{
+       min-width: 300px;
+       margin-top: 10%;
+    }
+
+   #up{
+       opacity: 0.5;
+       font-size: 30px;
+       bottom: 15%;
+   }
+
+   #imgLogo {
+       width: 100%;
+   }
+
+   footer{
+       flex-direction: column;
+   }
+
+   .icone-rede{
+       margin: 5% 10px;
+   }
+
+   .wrap-locais{
+       grid-template-columns: 100%;
+   }
+
+   .cases-sucessos{
+       grid-template-columns: 1fr;
+   }
+
+   .tela-inicial {
+    background: rgba(128, 27, 27, 0);
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 12%;
+    }
+
+    .tela-inicial h2 , .tela-inicial img{
+        display: none;
+    }
+
+    .nav-logo img{
+        width: 200px;
+    }
+    
+    .botao-principal{
+        margin-top:50%;
+    }
 }
