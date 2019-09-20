@@ -26,7 +26,6 @@
     width:100vw;
     text-align: center;
 }
-
 .imgLogo {
     width: auto;
     height: auto;
@@ -65,9 +64,39 @@ header{
 }
 
 footer{
-    width: 100vw;
-    height: 50px;
-    background: ;
+    height: 70px;
+    background: white;
+    display: flex;
+    background-color: rgb(19, 34, 53);
+    align-items: center;
+    color: white;
+    justify-content: space-around;
+}
+
+.icone-rede{
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid rgb(121.6, 214.7, 212.1);
+}
+
+.icone-rede:hover{
+    background: rgb(121.6, 214.7, 212.1);
+}
+
+.footer-rede{
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#desenvolvedora-footer{
+    text-decoration:none;
+    color: white;
+    font-weight: bold;
+}
+
+#desenvolvedora-footer:hover{
+    color: rgb(121.6, 214.7, 212.1);
 }
 
 nav {
