@@ -25,9 +25,9 @@
     background-size: 100%;
     text-align: center;
 }
-.imgLogo {
-    width: auto;
-    height: auto;
+
+#imgLogo {
+    width: 40%;
 }
 
 h2 {
@@ -101,9 +101,11 @@ header{
 }
 
 footer{
+    border-top: 1px white solid;
     height: 70px;
     background: white;
     display: flex;
+    flex-wrap: wrap;
     background-color: rgb(19, 34, 53);
     align-items: center;
     color: white;
@@ -113,11 +115,13 @@ footer{
 .icone-rede{
     width: 40px;
     border-radius: 50%;
-    border: 2px solid rgb(121.6, 214.7, 212.1);
+    border: 2px solid white;
+    background: white;
 }
 
 .icone-rede:hover{
     background: rgb(121.6, 214.7, 212.1);
+    border: rgb(121.6, 214.7, 212.1) 2px solid;
 }
 
 .footer-rede{
@@ -165,6 +169,53 @@ nav {
 .nav-links a:hover {
     color: #6DDAD3;
 }
+
+.nav-logo img{
+    width: 100%;
+}
+
+#contato-quemSomos{
+    display: flex;
+    background: rgb(19, 34, 53);
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contato{
+    margin: 100px 0;
+    margin-right: 5vw;
+    width: 30%;
+    color: white;
+    display: flex;
+    justify-content: center;
+
+}
+
+.quem-somos{
+    margin-left: 5vw;
+    width: 30%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    align-items: center;
+    justify-content: start;
+}
+
+.quem-somos h2{
+    margin-bottom: 8%;
+}
+
+.contato form{
+    width: 80%;
+    border: 2px white solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .img-container {
     overflow: hidden;
 }
@@ -190,11 +241,99 @@ nav {
 
 #produtos {
     width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
+::-webkit-input-placeholder {
+    color: white;
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+    color: white;  
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+    color: white;  
+ }
+ 
+ :-ms-input-placeholder {  
+    color: white;  
+ }
+
+ .contato form input, .contato form textarea{
+    background: rgb(19, 34, 53);
+    border: none;
+    border-bottom: 2px solid white;
+    margin: 10px;
+    color: white;
+    width: 90%;
+    resize: none;
+}
+
+.contato form input:focus, .contato form textarea:focus{
+    border-bottom: 2px solid rgb(121.6, 214.7, 212.1);
+}
+
+form> h2{
+    background: white;
+    color: rgb(19, 34, 53);
+    width: 60%;
+    position: relative;
+    top: -20px;
+    padding: 2%;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px; 
+}
+
+.botao-form{
+ margin: 10px;
+background: white;
+padding: 1vw;
+width: 50%;
+color: rgb(19, 34, 53);
+font-size: 15px;
+}
+
+.botao-form:hover{
+    box-shadow: 1px 2px 1px rgba(244, 244, 244, 0.4);
+}
+
+#up{
+    position: fixed;
+    bottom: 10%;
+    right: 0.5%;
+    font-size: 50px;
+}
+
+@media (max-width:500px){
+ .contato{
+    margin: 15% 0;
+    min-width: 300px;
+ }
+
+ .quem-somos{
+    min-width: 300px;
+    margin-top: 10%;
+ }
+
+#up{
+    opacity: 0.5;
+    font-size: 30px;
+    bottom: 15%;
+}
+
+#imgLogo {
+    width: 100%;
+}
+
+footer{
+    flex-direction: column;
+}
+
+.icone-rede{
+    margin: 5% 10px;
+}
+}
 .wrap-produtos {
     display: flex;
     justify-content: center;
