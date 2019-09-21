@@ -203,17 +203,18 @@ li p, .locais-descricao p {
 }
 
 .cases {
+    border-radius: 50%;
     height: 250px;
     width: 250px;
-    border: 1px solid black;
-    text-align: justify;
+    border: 3px solid rgb(19, 34, 53);
 }
 
 .card-image p {
     margin-right: 25%;
     margin-left: 25%;
     margin-top: 10px;
-}
+    color: rgb(19, 34, 53);
+ }
 
 /* contatos-Quem Somos */
 #contato-quemSomos {
