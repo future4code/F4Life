@@ -1,142 +1,22 @@
+/* geral */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-#conteudo-total{
-    display: flex;
-    flex-direction: column;
-}
-
-.tela-inicial {
-    background: rgb(0, 0, 0, 0.5);
-    height: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin: 12vh;
-}
-
-#imagem-entrada{
-    background-image: url(assets/background-img-universitários.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    text-align: center;
-}
-
+/* header */
 #imgLogo {
     width: 40%;
 }
 
-.cases-em-geral h3{
-    color: rgb(19, 34, 53);
-    text-decoration: none;
-    font-family: "Open Sans", serif;    
-    font-size: 25px;
-}
-
-.botao-principal {
-    text-transform: uppercase;
-    font-family: "Hammersmith One";    
-    font-size: 30px;
-    font-weight: 700;
-    border: none;
-    padding: 1%;
-    cursor: pointer;
-    display: inline-block;
-    width: auto;
-    height: auto;
-    border: 2px solid white;
-    background: #0093e7;
-    color: white;
-}
-
-.cases-em-geral {
-    background: white;
-}
-
-.cases-sucessos {
-    margin-bottom: 5%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    text-align: center;
-    grid-row-gap: 60px;
-}
-
-#tituloCases {
-    text-transform: uppercase;
-    font-family: "montserrat";    
-    font-size: 25px;
-    font-weight: 700;
-    text-align: center;
-    margin: 20px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-
-}
-
-.cases {
-    border-radius: 50%;
-    height: 250px;
-    width: 250px;
-    border: 3px solid rgb(19, 34, 53);
-}
-
-.card-image p {
-    margin-right: 25%;
-    margin-left: 25%;
-    margin-top: 10px;
-    color: rgb(19, 34, 53);
-}
-header{
+header {
     background-color: rgb(19, 34, 53);
     display: flex;
     position: sticky;
     top: 0;
     z-index: 1;
     justify-content: center;
-}
-
-footer{
-    border-top: 1px white solid;
-    height: 70px;
-    background: white;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(19, 34, 53);
-    align-items: center;
-    color: white;
-    justify-content: space-around;
-}
-
-.icone-rede{
-    width: 40px;
-    border-radius: 50%;
-    border: 2px solid white;
-    background: white;
-}
-
-.icone-rede:hover{
-    background: rgb(121.6, 214.7, 212.1);
-    border: rgb(121.6, 214.7, 212.1) 2px solid;
-}
-
-.footer-rede{
-    width: 15%;
-    display: flex;
-    justify-content: space-around;
-}
-
-#desenvolvedora-footer{
-    text-decoration:none;
-    color: white;
-    font-weight: bold;
-}
-
-#desenvolvedora-footer:hover{
-    color: rgb(121.6, 214.7, 212.1);
 }
 
 nav {
@@ -161,7 +41,7 @@ nav {
     color: white; 
 }
 
-.nav-links a:link, .nav-links a:visited, .nav-links a:visited  {
+.nav-links a:link, .nav-links a:active, .nav-links a:visited {
     color: white;
     text-decoration: none;
 }
@@ -170,52 +50,56 @@ nav {
     color: #6DDAD3;
 }
 
-.nav-logo img{
-    
+#conteudo-total {
+    display: flex;
+    flex-direction: column;
 }
 
-#contato-quemSomos{
+#up{
+    position: fixed;
+    bottom: 10%;
+    right: 0.5%;
+    font-size: 50px;
+}
+
+/* tela inicial */
+.tela-inicial {
+    background: rgb(0, 0, 0, 0.5);
+    height: 70%;
     display: flex;
-    background: rgb(19, 34, 53);
+    flex-direction: column;
     justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-items: center;
+    margin: 12vh;
 }
 
-.contato{
-    margin: 100px 0;
-    margin-right: 5vw;
-    width: 30%;
+.tela-inicial h2 {
     color: white;
-    display: flex;
-    justify-content: center;
-
 }
 
-.quem-somos{
-    margin-left: 5vw;
-    width: 30%;
+#imagem-entrada {
+    background-image: url(assets/background-img-universitários.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+}
+
+.botao-principal {
+    text-transform: uppercase;
+    font-family: "Hammersmith One";    
+    font-size: 30px;
+    font-weight: 700;
+    border: none;
+    padding: 1%;
+    cursor: pointer;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    border: 2px solid white;
+    background: rgb(121.6, 214.7, 212.1);
     color: white;
-    display: flex;
-    flex-direction: column;
-    height: 90%;
-    align-items: center;
-    justify-content: start;
 }
 
-.quem-somos h2{
-    margin-bottom: 8%;
-}
-
-.contato form{
-    width: 80%;
-    border: 2px white solid;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
+/* produtos */
 .img-container {
     overflow: hidden;
 }
@@ -230,19 +114,24 @@ nav {
 
 .locais-descricao {
     padding: 2%;
-    
 }
 
 .locais-descricao p {
     padding-bottom: 2%;
     font-weight: bold;
 }
+
 .conheca-produtos {
     padding: 1%;
 }
 
-.conheca-produtos h1{
+.conheca-produtos h1 {
     color: rgb(19, 34, 53);
+    margin-top: 20px;
+}
+
+li p, .locais-descricao p {
+    text-transform: uppercase;
 }
 
 #produtos {
@@ -252,73 +141,12 @@ nav {
     justify-content: center;
 }
 
-::-webkit-input-placeholder {
-    color: white;
- }
- 
- :-moz-placeholder { /* Firefox 18- */
-    color: white;  
- }
- 
- ::-moz-placeholder {  /* Firefox 19+ */
-    color: white;  
- }
- 
- :-ms-input-placeholder {  
-    color: white;  
- }
-
- .contato form input, .contato form textarea{
-    background: rgb(19, 34, 53);
-    border: none;
-    border-bottom: 2px solid white;
-    margin: 10px;
-    color: white;
-    width: 90%;
-    resize: none;
-}
-
-.contato form input:focus, .contato form textarea:focus{
-    border-bottom: 2px solid rgb(121.6, 214.7, 212.1);
-}
-
-form> h2{
-    background: white;
-    color: rgb(19, 34, 53);
-    width: 60%;
-    position: relative;
-    top: -20px;
-    padding: 2%;
-    margin: 0 auto;
-    text-align: center;
-    border-radius: 10px; 
-}
-
-.botao-form{
-    margin: 10px;
-    background: white;
-    padding: 1vw;
-    width: 50%;
-    color: rgb(19, 34, 53);
-    font-size: 15px;
-}
-
-.botao-form:hover{
-    box-shadow: 1px 2px 1px rgba(244, 244, 244, 0.4);
-}
-
-#up{
-    position: fixed;
-    bottom: 10%;
-    right: 0.5%;
-    font-size: 50px;
-}
-
 .wrap-produtos {
     display: flex;
     justify-content: center;
     background-color: #F3F7FA;
 }
+
 .locais-preco p {
     color: rgb(19, 34, 53);
 }
@@ -334,26 +162,219 @@ form> h2{
 
 .container-locais:hover {
     box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.3);
+    transform: translateY(-7px);
 }
 
-@media (min-width:1000px){
+.locais-detalhes {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* depoimentos */
+.cases-em-geral h3 {
+    color: rgb(19, 34, 53);
+    text-decoration: none;
+    font-family: "Open Sans", serif;    
+    font-size: 25px;
+}
+
+.cases-em-geral {
+    background: white;
+}
+
+.cases-sucessos {
+    margin-bottom: 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    text-align: center;
+    grid-row-gap: 60px;
+}
+
+#tituloCases {
+    text-transform: uppercase;
+    font-family: "montserrat";    
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    margin: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.cases {
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    border: 3px solid rgb(19, 34, 53);
+}
+
+.card-image p {
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-top: 10px;
+    color: rgb(19, 34, 53);
+ }
+
+/* contatos-Quem Somos */
+#contato-quemSomos {
+    display: flex;
+    background: rgb(19, 34, 53);
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contato {
+    margin: 100px 0;
+    margin-right: 5vw;
+    width: 30%;
+    color: white;
+    display: flex;
+    justify-content: center;
+
+}
+
+.quem-somos {
+    margin-left: 5vw;
+    width: 30%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    align-items: center;
+    justify-content: start;
+}
+
+.quem-somos h2 {
+    margin-bottom: 8%;
+}
+
+.contato form {
+    width: 80%;
+    border: 2px white solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+::-webkit-input-placeholder {
+    color: white;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: white;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color: white;  
+}
+
+:-ms-input-placeholder {  
+    color: white;  
+}
+
+.contato form input, .contato form textarea {
+    background: rgb(19, 34, 53);
+    border: none;
+    border-bottom: 2px solid white;
+    margin: 10px;
+    color: white;
+    width: 90%;
+    resize: none;
+}
+
+.contato form input:focus, .contato form textarea:focus {
+    border-bottom: 2px solid rgb(121.6, 214.7, 212.1);
+}
+
+form> h2 {
+    background: white;
+    color: rgb(19, 34, 53);
+    width: 60%;
+    position: relative;
+    top: -20px;
+    padding: 2%;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px; 
+}
+
+.botao-form {
+    margin: 10px;
+    background: white;
+    padding: 1vw;
+    width: 50%;
+    color: rgb(19, 34, 53);
+    font-size: 15px;
+}
+
+.botao-form:hover {
+    box-shadow: 1px 2px 1px rgba(244, 244, 244, 0.4);
+}
+
+/* footer */
+footer {
+    border-top: 1px white solid;
+    height: 70px;
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(19, 34, 53);
+    align-items: center;
+    color: white;
+    justify-content: space-around;
+}
+
+.icone-rede {
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background: white;
+}
+
+.icone-rede:hover {
+    background: rgb(121.6, 214.7, 212.1);
+    border: rgb(121.6, 214.7, 212.1) 2px solid;
+}
+
+.footer-rede {
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#desenvolvedora-footer {
+    text-decoration:none;
+    color: white;
+    font-weight: bold;
+}
+
+#desenvolvedora-footer:hover {
+    color: rgb(121.6, 214.7, 212.1);
+}
+
+
+/* responsividade */
+@media (min-width:1000px) {
     #imagem-entrada{
         height: 100vh;
     }
 }
 
-@media (max-width:500px){
+@media (max-width:500px) {
     .contato{
        margin: 15% 0;
        min-width: 300px;
     }
 
-    .quem-somos{
+    .quem-somos {
        min-width: 300px;
        margin-top: 10%;
     }
 
-   #up{
+   #up {
        opacity: 0.5;
        font-size: 30px;
        bottom: 15%;
@@ -363,19 +384,19 @@ form> h2{
        width: 100%;
    }
 
-   footer{
+   footer {
        flex-direction: column;
    }
 
-   .icone-rede{
+   .icone-rede {
        margin: 5% 10px;
    }
 
-   .wrap-locais{
+   .wrap-locais {
        grid-template-columns: 100%;
    }
 
-   .cases-sucessos{
+   .cases-sucessos {
        grid-template-columns: 1fr;
    }
 
